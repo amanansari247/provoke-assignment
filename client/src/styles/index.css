@@ -1,0 +1,103 @@
+/* ./styles/index.css */
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  /* Container styles */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header styles */
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Input styles */
+  .input-container {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .input-container input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Button styles */
+  .button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  
+  .button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Video item styles */
+  .video-item {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Video player styles */
+  .video-player {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+    border-radius: 4px;
+  }
+  
+  .video-player iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  
+  /* Video details styles */
+  .video-details {
+    margin-top: 10px;
+  }
+  
+  /* Responsive utility classes */
+  @media screen and (max-width: 600px) {
+    .input-container {
+      flex-direction: column;
+    }
+  
+    .input-container input {
+      margin-bottom: 10px;
+    }
+  }
+  
